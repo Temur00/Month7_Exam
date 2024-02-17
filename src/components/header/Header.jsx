@@ -27,8 +27,12 @@ const Header = () => {
           </div>
           <div className="right-nav-items">
             <img className="curt" src={curt} alt="curt" />
-            <button className="log">Login</button>
-            <button className="log">Sign Up</button>
+            <NavLink to="/login">
+              <button className="log">Login</button>
+            </NavLink>
+            <NavLink to="/">
+              <button className="log">Sign Up</button>
+            </NavLink>
             <div className="mode-border">
               <img src={darkLight} alt="darkLight" />
             </div>

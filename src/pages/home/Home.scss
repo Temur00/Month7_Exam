@@ -6,3 +6,271 @@
   font-family: Poppins, sans-serif;
   src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
+
+main {
+  margin-top: 120px;
+  section:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 120px;
+
+    .left-side {
+      .whole-users {
+        padding-top: 120px;
+        font-weight: 600;
+        color: $triple-nine;
+        font-family: Poppins;
+        font-size: 10px;
+      }
+      p:nth-child(2) {
+        font-weight: 800;
+        padding-top: 20px;
+        width: 500px;
+        animation-name: color_change;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        font-weight: 600;
+        font-family: Poppins;
+        color: $logo-pink;
+        font-size: 54px;
+        @keyframes color_change {
+          from {
+            color: blue;
+          }
+          to {
+            color: red;
+          }
+          0% {
+            color: rgb(221, 0, 255);
+          }
+          10% {
+            color: rgb(123, 0, 255);
+          }
+          20% {
+            color: rgb(0, 128, 255);
+          }
+          30% {
+            color: rgb(0, 217, 255);
+          }
+          40% {
+            color: rgb(0, 255, 166);
+          }
+          50% {
+            color: rgb(13, 255, 0);
+          }
+          60% {
+            color: rgb(166, 255, 0);
+          }
+          70% {
+            color: rgb(208, 255, 0);
+          }
+          80% {
+            color: rgb(255, 225, 0);
+          }
+          90% {
+            color: rgb(255, 153, 0);
+          }
+          100% {
+            color: rgb(255, 102, 0);
+          }
+        }
+      }
+      p:nth-child(3) {
+        width: 500px;
+
+        padding-top: 20px;
+        color: $triple-nine;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: Inter;
+      }
+      button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 18px 27px;
+        height: 62px;
+        font-size: 20px;
+        color: $nav-items-color;
+        border-radius: 18px;
+        border: 3px solid $logo-pink;
+        cursor: pointer;
+        transition: 0.4s;
+        background: $logo-pink;
+        color: white;
+      }
+      button:hover {
+        background: white;
+        color: $logo-pink;
+      }
+    }
+    .right-side {
+      padding-left: 100px;
+      padding-top: 130px;
+
+      .above-img {
+        margin-top: -40px;
+        position: absolute;
+        margin-bottom: 50px;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        gap: 8px;
+        width: 233px;
+        height: 63px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+          rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        .chicken-texts {
+          p:first-child {
+            padding-top: 8px;
+            font-size: 11px;
+            font-family: Poppins;
+            font-weight: 600;
+          }
+          p:nth-child(2) {
+            padding-top: 5px;
+            font-size: 7px;
+            font-family: Poppins;
+            font-weight: 500;
+          }
+          p:nth-child(3) {
+            padding-top: 10px;
+            padding-left: 120px;
+            font-size: 7px;
+            font-family: Poppins;
+            font-weight: 500;
+          }
+        }
+      }
+      .circle-img {
+        max-width: 420px;
+        height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 800px;
+        animation-name: circle-img;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        @keyframes circle-img {
+          from {
+            background: blue;
+          }
+          to {
+            background: red;
+          }
+          0% {
+            background: rgb(204, 0, 255);
+          }
+          25% {
+            background: rgb(113, 43, 206);
+          }
+          50% {
+            background: rgb(25, 8, 184);
+          }
+          75% {
+            background: rgb(113, 43, 206);
+          }
+          100% {
+            background: rgb(204, 0, 255);
+          }
+        }
+        img {
+          max-width: 415px;
+          margin-top: 38px;
+          margin-right: 41px;
+        }
+        @media only screen and (max-width: 440px) {
+          max-width: 310px;
+          height: 300px;
+
+          img {
+            max-width: 305px;
+            margin-top: 30px;
+            margin-right: 31px;
+          }
+        }
+      }
+      .graph {
+        position: relative;
+        width: 247px;
+        height: 247px;
+        margin-top: -180px;
+        // padding-right: 40px;
+        margin-left: -80px;
+      }
+      @media only screen and (max-width: 540px) {
+        padding-left: 0;
+        padding-top: 80px;
+        .above-img {
+          margin-left: 100px;
+        }
+        .graph {
+          margin-top: -75px;
+          margin-left: 90px;
+        }
+      }
+      @media only screen and (max-width: 440px) {
+        padding-top: 80px;
+        .above-img {
+          margin-left: 44px;
+        }
+        .graph {
+          margin-top: -60px;
+          margin-left: 40px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1060px) {
+      padding-right: 0;
+      justify-content: center;
+      .left-side {
+        .whole-users {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        p:nth-child(2) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+        @media only screen and (max-width: 540px) {
+          p:nth-child(1) {
+            font-weight: 900;
+            padding-top: 50px;
+          }
+          p:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 36px;
+          }
+        }
+        p:nth-child(3) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
