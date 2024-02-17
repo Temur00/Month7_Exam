@@ -6,84 +6,95 @@
   font-family: Poppins, sans-serif;
   src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
-
-.nav-items {
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  .left-nav-items {
+nav {
+  background: $white;
+  opacity: 0.92;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  .nav-items {
+    height: 120px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    p:nth-child(2) {
-      padding-left: 20px;
-      font-weight: 600;
-      font-family: Poppins;
-      color: $logo-pink;
-      font-size: 22px;
-    }
-    a {
-      font-size: 18px;
-      color: $nav-items-color;
-      font-family: Inter;
-      text-decoration: none;
-    }
-    a:nth-child(3) {
-      padding-left: 80px;
-    }
-    a:nth-child(4) {
-      padding-left: 20px;
-    }
-    .active {
-      color: $logo-pink;
-    }
-  }
-  .right-nav-items {
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    .curt {
-      padding-right: 10px;
-    }
-    .log {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      padding: 18px 27px;
-      height: 62px;
-      background: none;
-      font-size: 18px;
-      color: $nav-items-color;
-      border-radius: 18px;
-      border: 3px solid $logo-pink;
-      cursor: pointer;
-      transition: 0.4s;
-    }
-    .log:hover {
-      background: $logo-pink;
-      color: white;
-    }
-    .mode-border {
+    justify-content: space-between;
+    .left-nav-items {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 3px solid $logo-pink;
-      border-radius: 50px;
-      width: 48px;
-      height: 48px;
-      cursor: pointer;
-    }
-  }
-  @media only screen and (max-width: 720px) {
-    .left-nav-items {
+      p:nth-child(2) {
+        padding-left: 20px;
+        font-weight: 600;
+        font-family: Poppins;
+        color: $logo-pink;
+        font-size: 22px;
+      }
       a {
-        display: none;
+        font-size: 18px;
+        color: $nav-items-color;
+        font-family: Inter;
+        text-decoration: none;
+      }
+      a:nth-child(3) {
+        padding-left: 80px;
+      }
+      a:nth-child(4) {
+        padding-left: 20px;
+      }
+      .active {
+        color: $logo-pink;
       }
     }
     .right-nav-items {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      .curt {
+        padding-right: 10px;
+      }
       .log {
-        display: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 18px 27px;
+        height: 62px;
+        background: none;
+        font-size: 18px;
+        color: $nav-items-color;
+        border-radius: 18px;
+        border: 3px solid $logo-pink;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .log:hover {
+        background: $logo-pink;
+        color: white;
+      }
+      .mode-border {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid $logo-pink;
+        border-radius: 50px;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
       }
     }
+    @media only screen and (max-width: 720px) {
+      .left-nav-items {
+        .two-links {
+          display: none;
+        }
+      }
+      .right-nav-items {
+        .log {
+          display: none;
+        }
+      }
+    }
+  }
+  hr {
+    opacity: 0.6;
   }
 }
 
@@ -115,7 +126,7 @@
     .menu-btn-burger {
       width: 35px;
       height: 4px;
-      background: #333;
+      background: #5445b2;
     }
 
     &.open {
@@ -137,18 +148,20 @@
 
   .menu-items {
     position: absolute;
-    top: 0; /* Adjust as needed */
+    top: 120px; /* Adjust as needed */
     left: 0;
     background-color: #fff;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 1000%;
+    // height: 500px;
     color: $logo-pink;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-out;
     transform: translateX(-100%);
     z-index: 999;
+    opacity: 0.91;
     &.open {
       transform: translateY(0);
     }
@@ -159,7 +172,7 @@
     a {
       font-size: 20px;
       font-family: Inter;
-      margin-top: 10px;
+      margin-top: 25px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -170,7 +183,7 @@
     }
     .active {
       color: white;
-      background: $logo-pink;
+      background: #6c5fbc;
     }
   }
 }
