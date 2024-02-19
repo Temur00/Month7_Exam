@@ -24,7 +24,7 @@
     form {
       margin-top: 36px;
       display: block;
-      width: 382px;
+      max-width: 330px;
       input {
         margin-top: 20px;
         padding-inline: 10px;
@@ -39,7 +39,7 @@
       margin-top: 40px;
       height: 75px;
       background: $logo-pink;
-      width: 382px;
+      width: 330px;
       border-radius: 15px;
       font-size: 24px;
       color: white;
