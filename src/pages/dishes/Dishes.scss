@@ -9,13 +9,14 @@
 
 .dishes-hero {
   .input-filter {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 160px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     .search {
-      width: 600px;
+      width: 1000px;
       margin-right: 8px;
       input {
         border: 2px solid $logo-pink;
@@ -45,7 +46,7 @@
     }
   }
   .cards {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
