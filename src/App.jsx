@@ -10,6 +10,8 @@ import "./App.scss";
 const App = () => {
   const [carrier, setCarrier] = useState("");
   const [basketNumber, setBasketNumber] = useState(0);
+  const [user, setUser] = useState();
+
   return (
     <div>
       <Router>

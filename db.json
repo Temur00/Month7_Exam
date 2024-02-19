@@ -1,7 +1,7 @@
 {
   "prodacts": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Chicken Hell",
       "brand": "Healthy",
       "time": "24min",
@@ -12,7 +12,7 @@
       "background": "#f1d999"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Swe Dish",
       "brand": "Trending",
       "time": "34min",
@@ -23,7 +23,7 @@
       "background": "#f9b7a8"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Chicken Hell",
       "brand": "Supreme",
       "time": "24min",
@@ -34,7 +34,7 @@
       "background": "#a4c4b1"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Chicken Hell",
       "brand": "Healthy",
       "time": "24min",
@@ -45,7 +45,7 @@
       "background": "#f1d999"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Swe Dish",
       "brand": "Trending",
       "time": "34min",
@@ -56,7 +56,7 @@
       "background": "#f9b7a8"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Chicken Hell",
       "brand": "Supreme",
       "time": "24min",
@@ -67,7 +67,7 @@
       "background": "#a4c4b1"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Chicken Hell",
       "brand": "Healthy",
       "time": "24min",
@@ -78,7 +78,7 @@
       "background": "#f1d999"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Swe Dish",
       "brand": "Trending",
       "time": "34min",
@@ -89,7 +89,7 @@
       "background": "#f9b7a8"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Chicken Hell",
       "brand": "Supreme",
       "time": "24min",
@@ -100,7 +100,7 @@
       "background": "#a4c4b1"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Chicken Hell",
       "brand": "Healthy",
       "time": "24min",
@@ -111,7 +111,7 @@
       "background": "#f1d999"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Swe Dish",
       "brand": "Trending",
       "time": "34min",
@@ -122,7 +122,7 @@
       "background": "#f9b7a8"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Chicken Hell",
       "brand": "Supreme",
       "time": "24min",
@@ -133,7 +133,7 @@
       "background": "#a4c4b1"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Chicken Hell",
       "brand": "Healthy",
       "time": "24min",
@@ -144,7 +144,7 @@
       "background": "#f1d999"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Swe Dish",
       "brand": "Trending",
       "time": "34min",
@@ -155,7 +155,7 @@
       "background": "#f9b7a8"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Chicken Hell",
       "brand": "Supreme",
       "time": "24min",
@@ -168,7 +168,7 @@
   ],
   "user": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Chicken Hell",
       "brand": "Healthy",
       "time": "24min",
@@ -177,6 +177,17 @@
       "img": "public/swe-dish3.png",
       "color": "#DAA31A",
       "background": "#f1d999"
+    },
+    {
+      "id": "5",
+      "name": "Swe Dish",
+      "brand": "Trending",
+      "time": "34min",
+      "rating": "4.9",
+      "price": "19.99",
+      "img": "./assets/images/chicken-hell.png",
+      "color": "#FB471D",
+      "background": "#f9b7a8"
     }
   ]
 }

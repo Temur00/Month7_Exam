@@ -147,7 +147,7 @@ const Dishes = ({ setCarrier }) => {
                 ))}
               </div>
             ) : (
-              <h1>No dishes found.</h1>
+              <h1 style={{ fontFamily: "sans-serif" }}>No dishes found.</h1>
             )}
           </div>
           <hr />
