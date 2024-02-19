@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import { curt, darkLight, forkKnife } from "../../assets/index";
 
-const Header = () => {
+const Header = ({ basketNumber }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,7 +26,13 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="right-nav-items">
-            <img className="curt" src={curt} alt="curt" />
+            <NavLink to="/basket" className="basket">
+              <img src={curt} alt="logo" />
+              <div className="basket-above">
+                {basketNumber === 0 ? null : basketNumber}
+              </div>
+            </NavLink>
+
             <NavLink to="/login">
               <button className="log">Login</button>
             </NavLink>
